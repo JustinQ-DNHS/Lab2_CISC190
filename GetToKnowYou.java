@@ -1,9 +1,10 @@
 
 /**
- * Outputs stuff about the author
+ * Outputs information about me in a single println statement in multiple lines, 
+ * demonstrating usage of "\n" and how it's a placeholder for a next line character.
  *
  * @author Justin Quach
- * @version v1.0
+ * @version v1.1
  * @since 9/5/25
  */
 public class GetToKnowYou

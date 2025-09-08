@@ -1,6 +1,7 @@
 
 /**
- * Demonstrates imprecision error in math from coding.
+ * Demonstrates the imprecision error that stems from the floating point error. An error that stems from the way numbers are represented in computers
+ * as computers see numbers as binary and base 10 decimals do not translate well to base 2 decimals.
  *
  * @author Justin Quach
  * @version 1.0
