@@ -1,5 +1,0 @@
-What's your favorite city?San Diego
-Num of char in city name: 9.
-City name in caps: SAN DIEGO.
-City name in lowercase: san diego.
-First char in city name: S.

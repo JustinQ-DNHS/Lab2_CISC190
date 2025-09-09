@@ -1,6 +1,7 @@
 import java.util.Scanner;
 /**
- * Takes city name and spits out 4 things about it.
+ * Takes in a city name using the scanner object, then manipulates the city in order to display the city name's length, in upper case, in lower case
+ * and the first character in its name.
  *
  * @author Justin Quach
  * @version v1.0
@@ -11,11 +12,11 @@ public class StringManipulator
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("What's your favorite city?");
+        System.out.print("Enter a city: ");
         String city = input.nextLine();
-        System.out.println("Num of char in city name: " + city.length() + ".\n" +
-                           "City name in caps: " + city.toUpperCase() + ".\n" +
-                           "City name in lowercase: " + city.toLowerCase() + ".\n" +
-                           "First char in city name: " + city.charAt(0) + ".");
+        System.out.println("The city entered has: " + city.length() + " chars\n" +
+                           "In upper case: " + city.toUpperCase() + "\n" +
+                           "In lower case: " + city.toLowerCase() + "\n" +
+                           "First character: " + city.charAt(0) + "");
     }
 }

@@ -1,5 +1,0 @@
-What is the cost of your bill?25.5
-Meal charge: $25.5.
-Tax amount: $1.7212500000000002.
-Tip amount: $5.44425.
-Total cost: $32.665499999999994.

@@ -1,6 +1,0 @@
-What's your first name? Justin
-What's your middle name? Phov
-What's your last name? Quach
-Your first initial is J.
-Your middle initial is P.
-Your last initial is Q.

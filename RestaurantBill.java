@@ -1,6 +1,10 @@
 import java.util.Scanner;
 /**
- * Calculate misc about restaurant bill.
+ * RestaurantBill process:
+ * 1) Takes an input asking for meal amount
+ * 2) Prints the tax cost using a predefined TAX constant
+ * 3) Prints the tip cost using a predefined TIP constant
+ * 4) Prints the total cost from meal, tax cost, and tip cost
  *
  * @author Justin Quach
  * @version v1.0
@@ -10,21 +14,15 @@ public class RestaurantBill
 {
     public static void main(String[] args)
     {
-        final double tax = 0.0675;
-        final double tip = 0.2;
+        final double TAX = 0.0675;
+        final double TIP = 0.2;
         Scanner input = new Scanner(System.in);
-        System.out.print("What is the cost of your bill?");
-        try 
-        {
-            double basePrice = input.nextDouble();
-            System.out.println("Meal charge: $" + basePrice + ".\n" +
-                             "Tax amount: $" + (basePrice * tax) + ".\n" +
-                             "Tip amount: $" + ((basePrice * (1 + tax)) * tip) + ".\n" + 
-                             "Total cost: $" + (basePrice * (1 + tax) * (1 + tip)) + ".");
-        }
-        catch(Exception e) 
-        {
-            System.out.println("Please input a number");
-        }
+        System.out.print("Enter meal amount: ");
+        double basePrice = input.nextDouble();
+        // Was too lazy to add the tax and tip value to a var, so I just calculated in the equation.
+        System.out.printf("\nThe tax is: $%,.2f\n" +
+                           "The tip is: $%,.2f\n" + 
+                           "The meal cost with tax and tip is: $%,.2f",
+                           (basePrice * TAX), (basePrice * (1+TAX) * TIP), (basePrice * (1+TAX) * (1+TIP)));
     }
 }

@@ -1,0 +1,6 @@
+Enter your first name: Justin
+Enter your middle name: Amsterdam
+Enter your last name: Quach
+
+My name is: Justin Amsterdam Quach
+My initials are: JAQ

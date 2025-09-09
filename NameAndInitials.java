@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- * Asks for names and prints initials in response.
+ * Uses a scanner object in order to take the full name of the user and prints it back, along with their initials using the .charAt method.
  *
  * @author Justin Quach
  * @version v1.0
@@ -11,14 +11,13 @@ public class NameAndInitials
     public static void main(String[] arg)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("What's your first name? ");
-        String firstName = input.nextLine();
-        System.out.print("What's your middle name? ");
-        String middleName = input.nextLine();
-        System.out.print("What's your last name? ");
-        String lastName = input.nextLine();
-        System.out.println("Your first initial is " + firstName.charAt(0) + ".\n" + 
-                           "Your middle initial is " + middleName.charAt(0) + ".\n" +
-                           "Your last initial is " + lastName.charAt(0) + ".");
+        System.out.print("Enter your first name: ");
+        String fName = input.nextLine();
+        System.out.print("Enter your middle name: ");
+        String mName = input.nextLine();
+        System.out.print("Enter your last name: ");
+        String lName = input.nextLine();
+        System.out.println("\nMy name is: " + fName + " " + mName + " " + lName + "\n" +
+                           "My initials are: " + fName.charAt(0) + mName.charAt(0) + lName.charAt(0));
     }
 }
